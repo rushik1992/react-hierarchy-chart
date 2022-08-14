@@ -1,7 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
-import { INode, ReactHiererchy, Test } from 'react-hierarchy'
+import { INode, ReactHiererchyChart } from 'react-hierarchy-chart'
 
 
 interface custNode extends INode {
@@ -63,8 +61,20 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Vertical View</h1>
       <div className='hierarchy-viewer'>
-        <ReactHiererchy nodes={nodes} direction='vertical'
+        <ReactHiererchyChart nodes={nodes} direction='vertical'
+          randerNode={(node: custNode) => {
+            return <div className="node-template">
+              <strong>{node.position} </strong>
+              <span>{node.name} </span>
+              <button onClick={() => { alert(node.name); }}>ok</button>
+            </div>
+          }} />
+      </div>
+      <h1>Horizontal View</h1>
+      <div className='hierarchy-viewer'>
+        <ReactHiererchyChart nodes={nodes} direction='horizontal'
           randerNode={(node: custNode) => {
             return <div className="node-template">
               <strong>{node.position} </strong>
