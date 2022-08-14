@@ -1,6 +1,6 @@
 {
-  "name": "react-hierarchy",
-  "version": "1.0.0",
+  "name": "react-hierarchy-chart",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "rollup": "rollup -c",
