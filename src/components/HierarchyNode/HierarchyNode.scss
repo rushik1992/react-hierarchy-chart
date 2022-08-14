@@ -1,0 +1,113 @@
+.react-hierarchy-node-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    &-vertical {
+        flex-direction: column;
+    }
+    &-horizontal {
+    }
+
+    .react-hierarchy {
+
+        &-node{
+            display: flex;
+            align-items: center;
+            .node {
+                &-line {
+                    background-color: darkgrey;
+                    &-horizontal {
+                        width: 1em;
+                        height: 0.1em;
+                    }
+            
+                    &-vertical {
+                        height: 1em;
+                        width: 0.1em;
+                    }
+                }
+            
+                &-box{
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    border-radius: .2em;
+                    box-shadow: 0.05em 0.05em 0.2em 0.05em #0000002b;
+                }
+            }
+        }
+
+        &-node-horizontal {
+            padding: 1em 0;
+        }
+        &-node-vertical {
+            flex-direction: column;
+            padding: 0 1em;
+        }
+        &-children {
+            display: flex;
+            flex: 1;
+
+            &-horizontal {
+                flex-direction: column;
+            }
+
+            .children-container {
+                display: flex;
+
+                &:first-child {
+                    & > .lines-container {
+                        .lines {
+                            &:first-child {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    & > .lines-container {
+                        .lines {
+                            &:last-child {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+
+                &-vertical {
+                    flex-direction: column;
+                }
+
+                .lines {
+                    flex: 1;
+                    background-color: darkgrey;
+                    &-container {
+                        display: flex;
+
+                        &-vertical {
+                            .lines {
+                                height: 0.1em;
+                            }
+                        }
+                        &-horizontal {
+                            flex-direction: column;
+                            .lines {
+                                width: 0.1em;
+                                background-color: darkgrey;
+                            }
+                        }
+                    }
+                }
+                .m-line {
+                    width: 0.1em;
+                    height: 0.1em;
+                    background-color: darkgrey;
+                }
+            }
+        }
+
+        
+    }
+}
