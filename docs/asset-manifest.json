@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.829ec917.css",
-    "main.js": "/static/js/main.7c09b667.js",
-    "static/js/787.759e47f1.chunk.js": "/static/js/787.759e47f1.chunk.js",
-    "index.html": "/index.html",
-    "main.829ec917.css.map": "/static/css/main.829ec917.css.map",
-    "main.7c09b667.js.map": "/static/js/main.7c09b667.js.map",
-    "787.759e47f1.chunk.js.map": "/static/js/787.759e47f1.chunk.js.map"
+    "main.css": "/react-hierarchy-chart/static/css/main.829ec917.css",
+    "main.js": "/react-hierarchy-chart/static/js/main.d02430a9.js",
+    "static/js/787.759e47f1.chunk.js": "/react-hierarchy-chart/static/js/787.759e47f1.chunk.js",
+    "index.html": "/react-hierarchy-chart/index.html",
+    "main.829ec917.css.map": "/react-hierarchy-chart/static/css/main.829ec917.css.map",
+    "main.d02430a9.js.map": "/react-hierarchy-chart/static/js/main.d02430a9.js.map",
+    "787.759e47f1.chunk.js.map": "/react-hierarchy-chart/static/js/787.759e47f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.829ec917.css",
-    "static/js/main.7c09b667.js"
+    "static/js/main.d02430a9.js"
   ]
 }
