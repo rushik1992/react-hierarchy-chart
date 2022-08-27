@@ -1,6 +1,6 @@
-# ReactHiererchyChart
+# ReactHierarchyChart
 
-`ReactHiererchyChart` is an React Component for Vertical or Horizontal Hierarchy/Tree View. It can be used to show parent child view, Organization structure, Tree view. with your flaxible dynamic template design with controls.
+`ReactHierarchyChart` is an React Component for Vertical or Horizontal Hierarchy/Tree View. It can be used to show parent child view, Organization structure, Tree view. with your flaxible dynamic template design with controls.
 
 ## Installation
 
@@ -9,11 +9,11 @@ $ npm install react-hierarchy-chart
 ```
 ## Vertical View
 
-![NgxHierarchy Vertical View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/VerticalView.png)
+![React Vertical View](https://raw.githubusercontent.com/rushik1992/react-hierarchy-chart/master/example/public/verticalview.png)
 
 ## Horizontal View
 
-![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
+![React Horizontal View](https://raw.githubusercontent.com/rushik1992/react-hierarchy-chart/master/example/public/horizontalview.png)
 
 
 ## Demo Link
@@ -179,3 +179,8 @@ h1 {
 
 ```
 
+
+
+
+## Checkout hierarchy view in Angular also.
+[Click Here](https://www.npmjs.com/package/react-hierarchy-chart)
