@@ -1,12 +1,13 @@
 {
   "name": "react-hierarchy-chart",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "rollup": "rollup -c",
+    "build-lib": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Rushik",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -31,6 +32,14 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rushik1992/react-hierarchy-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rushik1992/react-hierarchy-chart/issues"
+  },
+  "homepage": "https://github.com/rushik1992/react-hierarchy-chart",
   "keywords": [
     "react-hierarchy",
     "react hierarchy chart",

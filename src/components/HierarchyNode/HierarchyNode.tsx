@@ -1,8 +1,8 @@
-
 import React, { ReactDOM } from "react";
 import "./HierarchyNode.scss";
 
 export interface INode {
+    key: string;
     cssClass: string | "";
     childs?: INode[];
 }
@@ -33,7 +33,8 @@ export const HierarchyNode = ({ node, direction, randerNode, hasParent }: Hierer
                     node.childs.map((child, index) => {
                         let isLast = (node.childs?.length || 0) - 1 === index;
                         return (
-                            <div className={`children-container children-container-${direction}`}>
+                            <div className={`children-container children-container-${direction}`}
+                                key={`HierarchyNodeChild${child.key || Date.now}`}>
                                 <div className={`lines-container lines-container-${direction}`} >
                                     <div className="lines"></div>
                                     <div className="m-line"></div>

@@ -31,6 +31,7 @@ $ npm install react-hierarchy-chart
 
 |Property|Type|Description
 |---|---|---
+|key|`string`|(New) Need to be Unique value will be used for react element Key value 
 |cssClass|`string`|Custom css class to override or change node style
 |childs|`INode[]`|The array of child nodes
 |{otherCustomeProperty}|`any or function`|You can add any other Property or Function in each node and can use in template
@@ -53,26 +54,31 @@ function App() {
 
   const nodes: custNode[] = [
     {
+      key:"122",
       name: 'Caleb Matthews',
       cssClass: 'level1',
       position: 'Chief Executive Officer',
       childs: [
         {
+          key:"132",
           name: 'Antonia Sancho',
           cssClass: 'level2',
           position: 'HR Manager'
         },
         {
+          key:"123",
           name: 'Thoms Hilty',
           cssClass: 'level2',
           position: 'Marketing Manager',
           childs: [
             {
+              key:"124",
               name: 'Eyal Matthews',
               cssClass: 'level3',
               position: 'Social Media'
             },
             {
+              key:"125",
               name: 'Adam Mark',
               cssClass: 'level3',
               position: 'Offline Marketing'
@@ -80,16 +86,19 @@ function App() {
           ]
         },
         {
+          key:"162",
           name: 'Barry Roy',
           cssClass: 'level2',
           position: 'Production Manager',
           childs: [
             {
+              key:"127",
               name: 'Ligia Opera',
               cssClass: 'level3',
               position: 'Supply Chain'
             },
             {
+              key:"128",
               name: 'Moran Perry',
               cssClass: 'level3',
               position: 'Operational Manager'
@@ -99,6 +108,7 @@ function App() {
       ]
     }
   ];
+
 
   return (
     <div className="App">
@@ -183,4 +193,4 @@ h1 {
 
 
 ## Checkout hierarchy view in Angular also.
-[Click Here](https://www.npmjs.com/package/react-hierarchy-chart)
+[Click Here](https://www.npmjs.com/package/ngx-hierarchy)

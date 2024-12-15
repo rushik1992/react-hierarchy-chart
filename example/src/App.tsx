@@ -12,26 +12,31 @@ function App() {
 
   const nodes: custNode[] = [
     {
+      key:"122",
       name: 'Caleb Matthews',
       cssClass: 'level1',
       position: 'Chief Executive Officer',
       childs: [
         {
+          key:"132",
           name: 'Antonia Sancho',
           cssClass: 'level2',
           position: 'HR Manager'
         },
         {
+          key:"123",
           name: 'Thoms Hilty',
           cssClass: 'level2',
           position: 'Marketing Manager',
           childs: [
             {
+              key:"124",
               name: 'Eyal Matthews',
               cssClass: 'level3',
               position: 'Social Media'
             },
             {
+              key:"125",
               name: 'Adam Mark',
               cssClass: 'level3',
               position: 'Offline Marketing'
@@ -39,16 +44,19 @@ function App() {
           ]
         },
         {
+          key:"162",
           name: 'Barry Roy',
           cssClass: 'level2',
           position: 'Production Manager',
           childs: [
             {
+              key:"127",
               name: 'Ligia Opera',
               cssClass: 'level3',
               position: 'Supply Chain'
             },
             {
+              key:"128",
               name: 'Moran Perry',
               cssClass: 'level3',
               position: 'Operational Manager'

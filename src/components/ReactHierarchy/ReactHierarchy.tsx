@@ -10,15 +10,15 @@ export interface ReactHierarchyProps {
     randerNode: Function
 }
 const ReactHierarchy = ({ nodes, direction, randerNode }: ReactHierarchyProps) => {
-    return <>
-        <div className={`react-hierarchy-container`}>
+    return (
+        <div className={`react-hierarchy-container`} key={Date.now()}>
             {
-                nodes.map(node => <div className={`react-hierarchy-root-${direction}`}>
-                    <HierarchyNode node={node} direction={direction} randerNode={randerNode} />
+                nodes.map((node,index) => <div className={`react-hierarchy-root-${direction}`}  key={`HierarchyNodeP${node.key || Date.now}`}>
+                    <HierarchyNode node={node} direction={direction} randerNode={randerNode}/>
                 </div>)
             }
-        </div>
-    </>
+        </div>)
+    
 };
 
 export default ReactHierarchy;
